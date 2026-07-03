@@ -15,7 +15,7 @@
         rel="stylesheet">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/styles.css?v=2">
+    <link rel="stylesheet" href="css/styles.css?v=4">
 </head>
 
 <body>
@@ -24,23 +24,24 @@
         <div class="header-container">
             <a href="#" id="brand-logo" class="brand-logo" aria-label="Go to home">साहिल.</a>
 
+            <!-- Desktop nav sits here via CSS position:static on ≥768px -->
             <nav id="main-navigation" class="main-nav" aria-label="Primary Navigation">
                 <ul class="nav-list">
                     <li><a href="#projects" id="nav-link-projects" class="nav-link">Projects</a></li>
                     <li><a href="#about" id="nav-link-about" class="nav-link">About</a></li>
-                    <li><a href="#resume" id="nav-link-resume" class="nav-link">Resume</a></li>
+                    <li><a href="https://drive.google.com/file/d/1eqdCegHrXVnGi0ruHlwkZKRj7B7hD40M/view?usp=sharing" id="nav-link-resume" class="nav-link" target="_blank" rel="noopener noreferrer">Resume</a></li>
                 </ul>
             </nav>
 
             <div class="header-actions">
                 <a href="#connect" class="btn-connect" id="btn-connect">
                     <span class="btn-connect-shadow"></span>
-                    <span class="btn-connect-main">Let’s Connect</span>
+                    <span class="btn-connect-main">Let's Connect</span>
                 </a>
 
                 <!-- Mobile Menu Hamburger Trigger -->
                 <button class="hamburger-btn" id="mobile-menu-trigger" aria-label="Toggle Navigation"
-                    aria-expanded="false">
+                    aria-expanded="false" type="button">
                     <span class="hamburger-bar"></span>
                     <span class="hamburger-bar"></span>
                     <span class="hamburger-bar"></span>
@@ -232,6 +233,7 @@
                 <nav class="footer-nav" aria-label="Footer navigation">
                     <a href="#projects" class="footer-nav-link">Projects</a>
                     <a href="#about" class="footer-nav-link">About</a>
+                    <a href="https://drive.google.com/file/d/1eqdCegHrXVnGi0ruHlwkZKRj7B7hD40M/view?usp=sharing" class="footer-nav-link" target="_blank" rel="noopener noreferrer">Resume</a>
                 </nav>
             </div>
 
@@ -282,9 +284,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Main Script -->
-    <script src="js/script.js"></script>
 
     <!-- Connect Modal Portal -->
     <div id="connect-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
@@ -394,7 +393,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js?v=4"></script>
 </body>
-
 </html>

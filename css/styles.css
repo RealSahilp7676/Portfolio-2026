@@ -222,8 +222,8 @@ h6 {
 .site-header {
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
     width: 100%;
     z-index: 1000;
     background-color: rgba(250, 250, 250, 0.8);
@@ -235,8 +235,11 @@ h6 {
 
 .site-header.header-scrolled {
     top: 16px;
-    width: calc(100% - 32px);
+    left: 16px;
+    right: 16px;
+    width: auto;
     max-width: 1152px;
+    margin: 0 auto;
     border-radius: 999px;
     background-color: rgba(250, 250, 250, 0.9);
     border: 1px solid var(--color-border);
@@ -286,12 +289,12 @@ h6 {
     /* stays above mobile nav drawer */
 }
 
-/* Navigation Menu */
+/* Navigation Menu — Mobile-first overlay drawer */
 .main-nav {
     position: fixed;
     top: 0;
-    right: -100%;
-    width: 100%;
+    left: 0;
+    width: 100vw;
     height: 100vh;
     background-color: rgba(250, 250, 250, 0.96);
     backdrop-filter: blur(20px);
@@ -300,11 +303,16 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: right var(--transition-normal);
+    /* Slide off to the right when closed */
+    transform: translateX(100%);
+    transition: transform var(--transition-normal);
+    /* Prevent off-screen panel from eating pointer events */
+    pointer-events: none;
 }
 
 .main-nav.is-active {
-    right: 0;
+    transform: translateX(0);
+    pointer-events: auto;
 }
 
 .nav-list {
@@ -385,15 +393,19 @@ h6 {
 
 /* Hamburger Trigger */
 .hamburger-btn {
+    /* Use isolation so its z-index stack is independent from siblings */
+    position: relative;
+    isolation: isolate;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 24px;
-    height: 18px;
-    background: none;
+    width: 44px;
+    height: 44px;
+    /* Padding centres the 24×18 bar area inside the 44×44 touch target */
+    padding: 13px 10px;
+    background: transparent;
     border: none;
     cursor: pointer;
-    padding: 0;
     z-index: 1100;
 }
 
@@ -436,6 +448,9 @@ h6 {
         padding: 0;
         z-index: auto;
         transition: none;
+        transform: none;
+        /* Restore pointer events unconditionally on desktop */
+        pointer-events: auto;
     }
 
     .nav-list {

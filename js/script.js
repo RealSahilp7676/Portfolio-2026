@@ -21,25 +21,50 @@ function initMobileMenu() {
     const nav = document.getElementById("main-navigation");
     if (!trigger || !nav) return;
 
-    const toggleMenu = () => {
-        const isOpen = trigger.classList.toggle("is-active");
-        nav.classList.toggle("is-active");
-        trigger.setAttribute("aria-expanded", isOpen ? "true" : "false");
-        
-        // Prevent background scrolling when menu is active
-        document.body.style.overflow = isOpen ? "hidden" : "";
+    const closeMenu = () => {
+        trigger.classList.remove("is-active");
+        nav.classList.remove("is-active");
+        trigger.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
     };
 
+    const openMenu = () => {
+        trigger.classList.add("is-active");
+        nav.classList.add("is-active");
+        trigger.setAttribute("aria-expanded", "true");
+        document.body.style.overflow = "hidden";
+    };
+
+    const toggleMenu = () => {
+        if (trigger.classList.contains("is-active")) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    };
+
+    // Hamburger button click
     trigger.addEventListener("click", toggleMenu);
+
+    // Close when tapping the translucent backdrop (not the nav-list itself)
+    nav.addEventListener("click", (e) => {
+        if (e.target === nav) {
+            closeMenu();
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && trigger.classList.contains("is-active")) {
+            closeMenu();
+            trigger.focus();
+        }
+    });
 
     // Close menu when navigating via links
     const links = nav.querySelectorAll(".nav-link");
     links.forEach(link => {
-        link.addEventListener("click", () => {
-            if (trigger.classList.contains("is-active")) {
-                toggleMenu();
-            }
-        });
+        link.addEventListener("click", closeMenu);
     });
 }
 
