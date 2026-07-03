@@ -1,0 +1,548 @@
+/* 
+    CareOS Custom Styles
+    Matches Figma Design: Portfolio-2026 > CareOS Project
+*/
+
+:root {
+    --color-bg: #FFFFFF;
+    --color-text-main: #000000;
+    --color-text-muted: #8d8d8d;
+    --color-lora: #1a1a1a;
+    --font-heading: 'Bricolage Grotesque', sans-serif;
+    --font-body: 'Sora', sans-serif;
+    --border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.careos-body {
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    font-family: var(--font-body);
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    line-height: 28px;
+    overflow-x: hidden;
+}
+
+/* ── Back Button (Figma: Bricolage Medium 16px, border #bababa) ── */
+.back-btn {
+    position: fixed;
+    top: 32px;
+    left: 32px;
+    z-index: 9999;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid #bababa;
+    color: var(--color-text-main);
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+/* ── Container ── */
+.case-study-content {
+    width: 92vw;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 120px 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+/* ── Header (centered) ── */
+.cs-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* Figma: Bricolage Bold 40px */
+.cs-title {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    line-height: normal;
+    color: #000;
+}
+
+/* Figma: Sora Light 20px / 28px, width 560px */
+.cs-subtitle {
+    font-family: var(--font-body);
+    font-size: 20px;
+    line-height: 28px;
+    color: #000;
+    margin: 0 auto;
+    font-weight: 300;
+    max-width: 560px;
+}
+
+/* ── Sections ── */
+.cs-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Figma: IBM Plex Mono Regular 20px, color #374151, center-aligned */
+.cs-chapter-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+    font-weight: 400;
+    color: #374151;
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+/* Figma: Bricolage Bold 40px, center-aligned */
+.cs-heading {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    line-height: normal;
+    text-align: center;
+    color: #000;
+}
+
+/* Figma: Lora SemiBold 24px / 32px, color #1a1a1a, LEFT-aligned */
+.cs-subheading {
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0 auto;
+    color: var(--color-lora);
+    text-align: left;
+    max-width: 760px;
+    width: 100%;
+}
+
+/* Figma: Sora Light 16px / 28px, color black, width 760px, LEFT-aligned */
+.cs-text-block {
+    max-width: 760px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #000;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.cs-text-block p {
+    margin: 0 0 24px;
+}
+
+.cs-text-block p:last-child {
+    margin-bottom: 0;
+}
+
+/* Figma: same as .cs-text-block but used for milestone descriptions */
+.cs-desc-text {
+    max-width: 760px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #000;
+    margin: 0 auto 24px;
+    text-align: left;
+}
+
+/* ── Meta List (Figma: bullet disc, Sora Light 16px / 28px) ── */
+.cs-meta-list {
+    list-style: disc;
+    padding-left: 24px;
+    margin: 32px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-align: left;
+    max-width: 760px;
+}
+
+.cs-meta-list li {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.cs-meta-list strong {
+    color: #000;
+    font-weight: 600;
+}
+
+/* ── TL;DR Matrix Title (Figma: DM Serif Display, 24px, #1a1a1a) ── */
+.tldr-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #1a1a1a;
+    line-height: normal;
+    margin: 0 auto;
+    max-width: 760px;
+    width: 100%;
+}
+
+/* ── Images & Grids ── */
+.cs-image-wrapper {
+    margin: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: transparent;
+}
+
+.cs-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-img {
+    border: none;
+    background: transparent;
+    border-radius: 0;
+}
+
+.cs-grid {
+    display: grid;
+    gap: 32px;
+    width: 100%;
+}
+
+.cs-grid.two-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cs-grid.three-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cs-grid-item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cs-grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Figma: Sora Regular 14px, color #8d8d8d, center-aligned */
+.cs-grid-item figcaption {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+    color: #8d8d8d;
+    text-align: center;
+}
+
+/* ── Component Section Titles (Figma: Sora Regular 20px, LEFT-aligned) ── */
+.component-title {
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #000;
+    margin: 0 auto 16px;
+    max-width: 760px;
+    width: 100%;
+}
+
+/* Component images: match heights, preserve aspect ratio, no crop */
+.button-components-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.button-components-container .cs-grid-item {
+    display: block;
+    margin: 0;
+}
+
+.button-components-container .cs-grid-item img {
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: block;
+}
+
+/* Specific heights matching Figma design */
+.button-section-buttons .cs-grid-item img {
+    height: 400px;
+}
+
+.button-section-badges .cs-grid-item img {
+    height: 240px;
+}
+
+.button-section-toggles .cs-grid-item img {
+    height: 300px;
+}
+
+/* ── Phase Track ── */
+.center-aligned-phases {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.phase-milestone {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.phase-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 760px;
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.phase-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Figma: Sora Regular 20px / 28px, phase titles */
+.phase-number {
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000;
+    display: block;
+}
+
+/* Figma: Sora Light 14px / normal, bullet list */
+.cs-list {
+    margin: 0;
+    padding-left: 21px;
+    list-style: disc;
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.cs-list li {
+    margin-bottom: 4px;
+}
+
+.cs-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Component description lists (Sora SemiBold label + Sora Light text) */
+.component-desc-list {
+    margin: 0;
+    padding-left: 48px;
+    list-style: disc;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #000;
+}
+
+.component-desc-list li {
+    margin-bottom: 4px;
+}
+
+.component-desc-list li:last-child {
+    margin-bottom: 0;
+}
+
+.component-desc-list strong {
+    font-weight: 600;
+}
+
+/* ── Color System & Typography sub-section titles ── */
+.subsection-title {
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000;
+    margin: 0 auto;
+    text-align: left;
+    max-width: 760px;
+    width: 100%;
+}
+
+/* ── FigJam Embed ── */
+.figjam-embed-wrapper {
+    width: 100%;
+    max-width: 900px;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    margin: 0 auto;
+}
+
+.figjam-embed-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ── CTA Button (Figma: offset shadow design) ── */
+.figma-btn-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.figma-btn-shadow {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(100% - 4px);
+    height: 48px;
+    background: #121212;
+    border-radius: 999px;
+}
+
+.figma-btn-custom {
+    position: relative;
+    background: #FFFFFF;
+    color: #000;
+    padding: 12px 24px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-family: var(--font-heading);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: normal;
+    border: 0.5px solid #636161;
+    transition: transform 0.2s ease;
+    z-index: 1;
+}
+
+.figma-btn-custom:hover {
+    transform: translate(2px, 2px);
+}
+
+/* ── Reveal Animations ── */
+.reveal-item {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                filter 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, filter, transform;
+}
+
+.reveal-item.is-visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+/* ── Chapter Label Decorative Lines ── */
+/* Decorative chapter lines removed */
+
+/* ── Responsive Overrides ── */
+@media (max-width: 768px) {
+    .case-study-content {
+        padding: 80px 0 60px;
+        gap: 60px;
+    }
+
+    .cs-title {
+        font-size: 32px;
+    }
+
+    .cs-heading {
+        font-size: 28px;
+    }
+
+    .cs-subtitle {
+        font-size: 18px;
+    }
+
+    .cs-chapter-label {
+        font-size: 16px;
+    }
+
+    .cs-grid.two-cols,
+    .cs-grid.three-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .cs-meta-list {
+        flex-direction: column;
+    }
+
+    .back-btn span {
+        display: none;
+    }
+
+    .back-btn {
+        top: 24px;
+        left: 24px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .button-components-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .button-components-container .cs-grid-item img {
+        height: auto !important;
+        width: 100%;
+    }
+
+    .chapter-line {
+        width: 100px;
+    }
+
+    .phase-number {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RailMadad Case Study - Redefining Railway Support">
+    <title>RailMadad Case Study | Sahil Pradhan</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="style.css?v=railmadad-parity-4">
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</head>
+
+<body class="case-study-body">
+
+    <!-- Back Button -->
+    <a href="../../index.html#projects" class="back-btn" aria-label="Back to Featured Projects">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" width="20" height="20">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Back to Projects</span>
+    </a>
+
+    <!-- Page Transition Overlay -->
+    <div class="page-transition">
+
+        <!-- Case Study Content -->
+        <article class="case-study-content">
+
+            <!-- Hero / Header Section -->
+            <header class="cs-header reveal-item">
+                <h1 class="cs-title">RailMadad - Redefining Railway Support</h1>
+                <p class="cs-subtitle">Simplifying railway support for millions of daily journeys</p>
+            </header>
+
+            <div class="cs-hero-image reveal-item">
+                <img src="../../assets/work/RailMadad/project-title-image.webp" alt="RailMadad Project Presentation"
+                    fetchpriority="high">
+            </div>
+
+            <!-- Overview Section -->
+            <section class="cs-section reveal-item">
+                <h2 class="cs-heading">Overview</h2>
+                <div class="cs-text-block">
+                    <p>RailMadad is the official grievance and assistance portal for Indian Railways, serving millions
+                        of daily commuters. While functionally robust, the existing interface suffers from
+                        <strong>massive visual clutter</strong>, multi-layered navigation, and <strong>critical
+                            friction</strong> during high-stress travel emergencies.</p>
+                    <p>Passengers often use the app during stressful situations such as medical emergencies, thefts, or
+                        train delays. In these moments, a <strong>confusing interface</strong> can slow access to
+                        critical support and assistance.</p>
+                    <p>This mobile redesign simplifies the experience by restructuring the information architecture for
+                        faster, more intuitive navigation. The focus is on <strong>reducing friction</strong> and making
+                        essential actions easier to access.</p>
+                    <ul class="cs-meta-list">
+                        <li><strong>Role:</strong> UI/UX Designer (Solo Project)</li>
+                        <li><strong>Timeline:</strong> 2 Months</li>
+                        <li><strong>Tools:</strong> Figma</li>
+                        <li><strong>Core Focus:</strong> Information Architecture, Accessibility, Micro-interactions
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Discovery & Research Framework -->
+            <section class="cs-section reveal-item">
+                <h2 class="cs-heading">Discovery & Research Framework</h2>
+                <div class="cs-text-block">
+                    <p>Before designing a single pixel, I needed to look past the surface interface and diagnose the
+                        <strong>real root causes</strong> of friction in the current app. I approached this through a
+                        multi-layered research process that combined real user sentiment, target user behavior, expert
+                        evaluation, and logical flow restructuring.</p>
+                </div>
+            </section>
+
+            <!-- Play Store Review Mining -->
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Listening to the Millions</h3>
+                <div class="cs-text-block">
+                    <p>To gather <strong>unvarnished qualitative data</strong> at scale, I analyzed thousands of public
+                        app store reviews. This process helped uncover raw passenger frustrations, ranging from
+                        <strong>inconsistent authentication errors</strong> and <strong>slow response times</strong> to
+                        confusing menu navigation, revealing the key pain points behind real world user drop offs.</p>
+                </div>
+                <div class="cs-image-wrapper">
+                    <img src="../../assets/work/RailMadad/play-store-review.webp" alt="Play Store Review Mining"
+                        loading="lazy">
+                </div>
+                <span class="cs-label">Play Store Review Mining</span>
+            </section>
+
+            <!-- Personas -->
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Designing for Diverse Needs</h3>
+                <div class="cs-text-block">
+                    <p>RailMadad caters to an incredibly diverse national demographic. To ground my design choices, I
+                        established <strong>two distinct target user personas</strong> based on my research: The
+                        Vulnerable Passenger (who experiences high stress and lower tech-literacy during transit
+                        emergencies) and The High-Frequency Commuter (who values sheer efficiency, speed, and automated
+                        utilities).</p>
+                </div>
+                <div class="cs-media-grid">
+                    <div class="cs-image-wrapper">
+                        <span class="cs-label">Persona - 1</span>
+                        <img src="../../assets/work/RailMadad/persona-1.webp" alt="Persona 1" loading="lazy">
+                    </div>
+                    <div class="cs-image-wrapper">
+                        <span class="cs-label">Persona - 2</span>
+                        <img src="../../assets/work/RailMadad/persona-2.webp" alt="Persona 2" loading="lazy">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Heuristic Evaluation -->
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Heuristic Evaluation</h3>
+                <div class="cs-text-block">
+                    <p>I conducted a <strong>rigorous heuristic analysis</strong> of the existing RailMadad interface to
+                        diagnose systemic layout problems. By breaking down the screens step-by-step, I flagged
+                        <strong>critical usability violations</strong>, such as hidden primary actions, high cognitive
+                        data loads, and a lack of clear visual feedback during form submission.</p>
+                </div>
+                <div class="cs-image-wrapper">
+                    <img src="../../assets/work/RailMadad/heuristic-evaluation-1.webp" alt="Heuristic Evaluation"
+                        loading="lazy">
+                </div>
+                <div class="cs-image-wrapper mt-4">
+                    <img src="../../assets/work/RailMadad/heuristic-evaluation-2.webp"
+                        alt="Heuristic Evaluation Continued" loading="lazy">
+                </div>
+                <span class="cs-label">Heuristic Evaluation</span>
+            </section>
+
+            <!-- Information Architecture -->
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Information Architecture (IA)</h3>
+                <div class="cs-text-block">
+                    <p>To bridge the gap between user problems and a seamless UI solution, I
+                        <strong>re-engineered</strong> the logical flow of the app. This structural blueprint defines a
+                        <strong>linear path</strong> for the grievance workflow, streamlining everything from data entry
+                        and automated validation blocks to selecting specialized assistance types and attaching
+                        supporting media.</p>
+                </div>
+                <div class="cs-image-wrapper">
+                    <img src="../../assets/work/RailMadad/information-architecture.webp" alt="Information Architecture"
+                        loading="lazy">
+                </div>
+                <span class="cs-label">Information Architecture (IA)</span>
+            </section>
+
+            <!-- Onboarding Experience -->
+            <section class="cs-section reveal-item">
+                <h2 class="cs-heading">Onboarding Experience</h2>
+                <div class="cs-text-block">
+                    <p>The redesigned onboarding uses a <strong>problem-to-solution</strong> story across <strong>three
+                            screens</strong> to address common traveler concerns and set clear expectations. It begins
+                        by highlighting real transit issues such as <strong>medical emergencies</strong>,
+                        <strong>breakdowns</strong>, and <strong>unhygienic coaches</strong>. These concerns are
+                        visually transformed from red alert indicators into reassuring green resolution markers,
+                        reinforcing trust. The flow emphasizes <strong>easy seat-based reporting</strong>,
+                        <strong>real-time tracking</strong>, and a clear “<strong>Get Started</strong>” action to drive
+                        engagement.</p>
+                </div>
+                <div class="cs-video-wrapper">
+                    <video class="cs-video" loop muted playsinline preload="none">
+                        <source src="../../assets/work/RailMadad/Onboarding.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span class="cs-label">Onboarding Screen Prototype</span>
+            </section>
+
+            <!-- Frictionless Authentication -->
+            <section class="cs-section reveal-item">
+                <h2 class="cs-heading">Frictionless Authentication</h2>
+                <div class="cs-text-block">
+                    <p>Securing an account on a high traffic public utility application requires a delicate balance
+                        between <strong>rigorous security protocols</strong> and <strong>zero friction user
+                            pathways</strong>. The authentication suite, comprising the Log In, Forgot Password, and
+                        Sign Up states, is unified by a highly structured layout that <strong>minimizes cognitive
+                            load</strong> during the entry process. The entry points employ a <strong>clean tabbed
+                            navigation system</strong> at the top, allowing users to switch effortlessly between logging
+                        in and registering without disorienting page jumps.</p>
+                </div>
+            </section>
+
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Log In Interface</h3>
+                <div class="cs-text-block">
+                    <p>The Log In screen provides a <strong>secure and accessible entry point</strong> for returning
+                        users. A <strong>tabbed toggle</strong> enables quick switching between login and registration,
+                        while credential fields are arranged in a simple linear layout to reduce effort. The
+                        <strong>Captcha</strong> includes refresh and audio-assistance options for accessibility. A
+                        persistent header with a <strong>language selector</strong> supports multilingual access.</p>
+                </div>
+                <div class="cs-video-wrapper">
+                    <video class="cs-video" loop muted playsinline preload="none">
+                        <source src="../../assets/work/RailMadad/Login.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span class="cs-label">Log In Screen Prototype</span>
+            </section>
+
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Forgot Password Recovery</h3>
+                <div class="cs-text-block">
+                    <p>The Forgot Password Recovery screen provides a <strong>simple and efficient path</strong> for
+                        users to regain account access. A clear back-navigation option returns users to the login page,
+                        while a single-column form requests the registered contact identifier. An accessible Captcha
+                        verifies identity before users proceed via the prominent confirmation button.</p>
+                </div>
+                <div class="cs-video-wrapper">
+                    <video class="cs-video" loop muted playsinline preload="none">
+                        <source src="../../assets/work/RailMadad/Forgot Password.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span class="cs-label">Forgot Password Screen Prototype</span>
+            </section>
+
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Sign Up & Dynamic Validation</h3>
+                <div class="cs-text-block">
+                    <p>The Sign Up screen is designed to support efficient account creation while reducing input errors.
+                        A <strong>clear form structure</strong> organizes personal details, contact information, and
+                        credential setup into an easy-to-follow flow. To improve usability, a <strong>live password
+                            validation</strong> section provides real-time feedback on security requirements such as
+                        length, character types, and complexity rules. This <strong>immediate guidance</strong> helps
+                        users meet password criteria before submission, minimizing errors and improving completion
+                        rates.</p>
+                </div>
+                <div class="cs-video-wrapper">
+                    <video class="cs-video" loop muted playsinline preload="none">
+                        <source src="../../assets/work/RailMadad/Sign Up.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span class="cs-label">Sign Up Screen Prototype</span>
+            </section>
+
+            <!-- The Train Grievance Form -->
+            <section class="cs-section reveal-item">
+                <h2 class="cs-heading">The Train Grievance Form</h2>
+                <div class="cs-text-block">
+                    <p>The Train Grievance Form serves as the core functional engine of the RailMadad application.
+                        Filing a complaint on a moving train is often done under stressful conditions with
+                        <strong>unstable network connectivity</strong>. To accommodate these real-world constraints, the
+                        entire form is <strong>re-engineered</strong> as a single-page progressive layout, dividing
+                        complex data collection into highly structured, error-resistant visual buckets.</p>
+                </div>
+            </section>
+
+            <!-- Emergency Alert -->
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Emergency Alert (Press & Hold)</h3>
+                <div class="cs-text-block">
+                    <p>Positioned at the absolute top of the grievance interface is a high-visibility, persistent
+                        Emergency Alert banner colored in a high-contrast safety red. Designed specifically for critical
+                        scenarios like severe medical crises or security threats, it bypasses the standard form
+                        entirely.</p>
+                    <ul class="cs-list">
+                        <li><strong>Accidental Trigger Prevention:</strong> To prevent false alarms caused by accidental
+                            taps while holding a phone on a moving, bumpy train, the button utilizes a "Press & Hold for
+                            3 Seconds" interaction pattern.</li>
+                        <li><strong>Immediate Utility:</strong> This physical duration gate ensures that only
+                            intentional actions trigger the high-priority medical or security assistance protocols,
+                            while its placement guarantees it is the first element a panicked user sees.</li>
+                    </ul>
+                </div>
+                <div class="cs-video-wrapper">
+                    <img src="../../assets/work/RailMadad/emergency-alert.webp" alt="Emergency Alert" loading="lazy">
+                </div>
+                <span class="cs-label">“Emergency Alert" feature</span>
+            </section>
+
+            <!-- Journey Details -->
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Journey Details & Auto-Fill Efficiency</h3>
+                <div class="cs-text-block">
+                    <p>Manual typing is a major source of form friction and data errors. The Journey Details section
+                        eliminates this by making the passenger's PNR (Passenger Name Record) number the central anchor
+                        of the data entry process.</p>
+                    <ul class="cs-list">
+                        <li><strong>Smart Verification:</strong> When a user types or pastes their PNR into the primary
+                            input field, the system runs an instant validation check, marked by a clear green success
+                            checkmark.</li>
+                        <li><strong>Contextual Auto-Fill:</strong> Once verified, the interface automatically fetches
+                            and displays the train number (22974) and travel class (3A) in read-only informational
+                            blocks. This saves the user from recalling or looking up complex transit numbers.</li>
+                    </ul>
+                </div>
+                <div class="cs-video-wrapper">
+                    <video class="cs-video" loop muted playsinline preload="none">
+                        <source src="../../assets/work/RailMadad/Journey Details.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span class="cs-label">Journey Details Section</span>
+            </section>
+
+            <!-- Issue Category -->
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Issue Category Section</h3>
+                <div class="cs-text-block">
+                    <p>To ensure grievances are instantly routed to the correct railway department (e.g., electrical,
+                        medical, cleaning), the Issue Category block utilizes a two-tier nested selection system.</p>
+                    <ul class="cs-list">
+                        <li><strong>Cognitive Load Reduction:</strong> Instead of forcing the passenger to scroll
+                            through hundreds of unorganized complaint types, the user first selects a broad Assistance
+                            Type (such as Electrical Equipment).</li>
+                        <li><strong>Specific Mapping:</strong> This choice dynamically updates the Specific Issue
+                            dropdown below it, displaying only relevant sub-categories (such as AC - Not Working /
+                            Failure). This progressive disclosure prevents user confusion and accelerates form
+                            completion.</li>
+                    </ul>
+                </div>
+                <div class="cs-video-wrapper">
+                    <video class="cs-video" loop muted playsinline preload="none">
+                        <source src="../../assets/work/RailMadad/Issue Category.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span class="cs-label">Issue Category Section</span>
+            </section>
+
+            <!-- Evidence & Details -->
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Evidence & Details Section</h3>
+                <div class="cs-text-block">
+                    <p>The final segment provides the authorities with the context needed to resolve the logged issue
+                        effectively. It combines rich multimedia attachments with descriptive text inputs.</p>
+                    <ul class="cs-list">
+                        <li><strong>Dual Capture Vectors:</strong> Clear, side-by-side action buttons allow users to
+                            either launch the native device camera to "Take Photo" immediately or "Upload File" from
+                            their local storage.</li>
+                        <li><strong>Transparent System Feedback:</strong> Attached media files are displayed as visual
+                            cards complete with thumbnail previews, exact filenames, file sizes, and explicit red trash
+                            icons for instant removal.</li>
+                        <li><strong>Low-Network Guardrails:</strong> An informational notice explicitly warns the user
+                            that images are automatically compressed to accommodate low-network conditions on moving
+                            trains. Setting this expectation upfront alleviates user anxiety regarding slow upload
+                            speeds or dropped connections.</li>
+                    </ul>
+                </div>
+                <div class="cs-video-wrapper">
+                    <video class="cs-video" loop muted playsinline preload="none">
+                        <source src="../../assets/work/RailMadad/Evidence and Details.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span class="cs-label">Evidence & Details Section</span>
+            </section>
+
+            <!-- Station Grievance Form -->
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">The Station Grievance Form</h3>
+                <div class="cs-text-block">
+                    <p>The Station Grievance Form adapts the application's <strong>core data entry architecture</strong>
+                        for passengers on station premises, while maintaining a high priority emergency banner and
+                        focusing the layout on station related infrastructure issues. Accessible via a sub navigation
+                        tab, the interface front loads the "Issue Category" section to quickly isolate problems such as
+                        cleanliness or facility failures.</p>
+                    <p>A dedicated <strong>"Station Details"</strong> section replaces free text inputs with structured
+                        dropdowns for station name and platform number, supported by a validated PNR field for quick
+                        verification of travel data. The form concludes with an "Evidence & Details" area for uploading
+                        media and adding notes, secured by a "Swipe to Submit Grievance" gesture to reduce accidental
+                        submissions in crowded station environments.</p>
+                </div>
+                <div class="cs-video-wrapper">
+                    <video class="cs-video" loop muted playsinline preload="none">
+                        <source src="../../assets/work/RailMadad/Station Grievance Form.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span class="cs-label">Station Grievance Form</span>
+            </section>
+
+            <!-- Services Screen -->
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Ancillary Services Hub</h3>
+                <div class="cs-text-block">
+                    <p>The Services dashboard serves as a centralized, <strong>high accessibility utility
+                            directory</strong> designed to streamline a traveler’s transit experience from a single
+                        launch point. Instead of cluttering the primary app with redundant systems, this interface acts
+                        as an efficient web and application redirection hub.</p>
+                    <p>Core utilities such as Ticket Booking, UTS Ticketing, Food Catering, and Reservation Enquiries
+                        are organized in a clean two column grid with uniform icons and clear labels. This grouping
+                        brings multiple public platforms into one cohesive interface, enabling <strong>quick one tap
+                            access</strong> and creating a more seamless digital travel experience.</p>
+                </div>
+                <div class="cs-video-wrapper">
+                    <img src="../../assets/work/RailMadad/service-hub.webp" alt="Services Hub" loading="lazy">
+                </div>
+                <span class="cs-label">Ancillary Services Hub</span>
+            </section>
+
+            <!-- Complaints Management -->
+            <section class="cs-section reveal-item">
+                <h2 class="cs-heading">Complaints Management</h2>
+                <div class="cs-text-block">
+                    <p>Filing a complaint is only the first step in a public utility ecosystem; providing continuous
+                        <strong>transparency</strong>, tracking, and <strong>user control</strong> over active tickets
+                        is what ultimately builds user trust. The Complaints module is redesigned as a dashboard that
+                        answers the user’s key question: “What is happening with my request?” By structuring post
+                        submission actions into <strong>clear informational layers</strong>, the interface transforms a
+                        traditionally opaque administrative process into an open, interactive, and self contained
+                        management suite.</p>
+                </div>
+            </section>
+
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Track Status & Live Timeline</h3>
+                <div class="cs-text-block">
+                    <p>When a commuter expands a specific ticket from their main history feed, they are taken into a
+                        dedicated Complaint Details view. This screen presents all originally submitted information
+                        while emphasizing a primary action to check real time status through a dynamic timeline view.
+                    </p>
+                    <ul class="cs-list">
+                        <li><strong>Complaint Overview & Status Tracking:</strong> Displays all submitted ticket details
+                            in a structured format and provides a primary action to open real time status updates
+                            through a dynamic timeline view.</li>
+                        <li><strong>End to End Progress Visibility:</strong> Provides a clear timeline of the
+                            complaint’s lifecycle, from registration to resolution.</li>
+                    </ul>
+                </div>
+                <div class="cs-video-wrapper">
+                    <video class="cs-video" loop muted playsinline preload="none">
+                        <source src="../../assets/work/RailMadad/Complaints Management.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span class="cs-label">Real Time Complaint Status Feature</span>
+            </section>
+
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Apply Filter & Smart Empty States</h3>
+                <div class="cs-text-block">
+                    <p>To help frequent travelers manage historical and ongoing reports, the interface includes a
+                        dedicated Filters module that simplifies navigation through large complaint histories. Users can
+                        quickly narrow results and focus on the most relevant grievances.</p>
+                    <ul class="cs-list">
+                        <li><strong>Advanced Complaint Filtering:</strong> Allows users to refine complaint records
+                            using chip based filters for complaint type, status, and incident date, making large
+                            histories easier to navigate.</li>
+                        <li><strong>Smart Empty State Handling:</strong> When no results match the selected filters, the
+                            system displays active filter tags for clarity and provides a prominent "+ New Complaint"
+                            action to encourage the next step.</li>
+                    </ul>
+                </div>
+                <div class="cs-video-wrapper">
+                    <video class="cs-video" loop muted playsinline preload="none">
+                        <source src="../../assets/work/RailMadad/Complaints Filter.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span class="cs-label">Apply Filter Feature</span>
+            </section>
+
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Close Grievance Protocol</h3>
+                <div class="cs-text-block">
+                    <p>The Complaints module empowers users with direct control over their active grievances, ensuring
+                        that resolved issues can be managed without waiting for administrative intervention. This
+                        promotes a more efficient and user centered complaint management experience.</p>
+                    <ul class="cs-list">
+                        <li><strong>User Controlled Grievance Closure:</strong> Allows passengers to manually close or
+                            cancel a complaint directly from the ticket details or live status timeline when an issue
+                            has already been resolved.</li>
+                        <li><strong>Workflow Optimization:</strong> Removes self resolved complaints from active
+                            processing queues, helping maintain accurate records and reducing unnecessary backend
+                            workload.</li>
+                    </ul>
+                </div>
+                <div class="cs-video-wrapper">
+                    <video class="cs-video" loop muted playsinline preload="none">
+                        <source src="../../assets/work/RailMadad/Close Grievance.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span class="cs-label">Close Grievance Procedure</span>
+            </section>
+
+            <!-- Profile & Account Settings -->
+            <section class="cs-section reveal-item">
+                <h2 class="cs-heading">Profile & Account Settings</h2>
+                <div class="cs-text-block">
+                    <p>The Profile hub provides a <strong>centralized space</strong> for managing account information,
+                        preferences, and support resources. A clear, section-based layout organizes profile settings,
+                        legal information, and help options, enabling users to quickly access <strong>key account
+                            functions</strong> and securely sign out from a single location.</p>
+                </div>
+            </section>
+
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Edit Profile & Secure Configuration</h3>
+                <div class="cs-text-block">
+                    <p>The Update Profile interface allows users to modify personal information through a familiar and
+                        structured form experience. Existing profile details are pre populated, enabling quick updates
+                        while maintaining consistency across the application.</p>
+                    <ul class="cs-list">
+                        <li><strong>Seamless Profile Editing:</strong> Pre filled input fields allow users to review and
+                            update personal information efficiently with minimal effort.</li>
+                        <li><strong>Secure Information Updates:</strong> Integrated password validation and Captcha
+                            verification help protect account changes while ensuring data accuracy and security.</li>
+                    </ul>
+                </div>
+                <div class="cs-video-wrapper">
+                    <video class="cs-video" loop muted playsinline preload="none">
+                        <source src="../../assets/work/RailMadad/Update Profile.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span class="cs-label">Update Profile Workflow</span>
+            </section>
+
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Dynamic & Contextual Feedback System</h3>
+                <div class="cs-text-block">
+                    <p>The Provide Feedback interface simplifies user input by introducing an emoji-based satisfaction
+                        rating scale for quick and intuitive responses. An optional feedback field allows users to share
+                        additional comments, while a dynamic placeholder adapts to the selected rating to encourage
+                        meaningful participation:</p>
+                    <ul class="cs-list">
+                        <li><strong>Positive State Response:</strong> If a user taps an "Excellent" rating, the text
+                            container placeholder dynamically alters to state: "Tell us what made your experience
+                            excellent...", priming the user to share specific highlights of their journey.</li>
+                        <li><strong>Negative State Response:</strong> If a user selects a "Terrible" rating, the
+                            placeholder shifts to text saying: "Tell us what went wrong and how we can improve...",
+                            empathizing with their frustration and providing a clear framework for constructive
+                            criticism.</li>
+                    </ul>
+                    <p>This tailored approach transforms a static form into an adaptive, conversational touchpoint,
+                        making user feedback feel highly relevant and less demanding to complete.</p>
+                </div>
+                <div class="cs-video-wrapper">
+                    <video class="cs-video" loop muted playsinline preload="none">
+                        <source src="../../assets/work/RailMadad/Provide Feedback.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span class="cs-label">Feedback Form Interface</span>
+            </section>
+
+            <!-- Reflection & Takeaways -->
+            <section class="cs-section reveal-item">
+                <h2 class="cs-heading">Reflection & Takeaways</h2>
+                <div class="cs-text-block">
+                    <p><strong>Redesigning RailMadad</strong> was both a significant challenge and a valuable
+                        <strong>learning experience</strong>. As a platform serving <strong>millions of daily
+                            commuters</strong>, every design decision impacts <strong>safety</strong>,
+                        <strong>comfort</strong>, and <strong>accessibility</strong>. This project helped me move beyond
+                        creating visually appealing interfaces to building <strong>reliable</strong>,
+                        <strong>user-centered</strong>, and <strong>high-accessibility</strong> solutions for real-world
+                        needs.</p>
+                </div>
+            </section>
+
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Key Learnings</h3>
+                <div class="cs-text-block">
+                    <ul class="cs-list">
+                        <li><strong>Designing for High-Stress Environments:</strong> Users often face anxiety, time
+                            pressure, and poor connectivity while traveling. This led to features like Emergency SOS and
+                            Swipe to Submit, emphasizing context-aware interaction design.</li>
+                        <li><strong>Accessibility Over Aesthetics:</strong> This project reinforced the importance of
+                            accessibility, high-contrast visuals, clear iconography, and localized experiences over
+                            purely visual trends.</li>
+                        <li><strong>Data Organization & Progressive Disclosure:</strong> Using progressive disclosure,
+                            structured forms, and smart auto-fills helped reduce cognitive overload and create a
+                            smoother user journey.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="cs-section reveal-item">
+                <h3 class="cs-subheading">Future Scope & Next Steps</h3>
+                <div class="cs-text-block">
+                    <p>If I were to take this project into the next phase of development, my immediate priority would be
+                        to conduct field usability testing. I would test <strong>high-fidelity interactive
+                            prototypes</strong> directly with <strong>diverse commuter groups</strong> at busy railway
+                        stations to evaluate how effectively individuals of varying age groups and tech-literacy levels
+                        can navigate the new layouts.</p>
+                    <p>Additionally, I would measure success through specific, quantifiable data metrics:</p>
+                    <ul class="cs-list">
+                        <li><strong>Task Success Rate:</strong> Measuring the average speed and completion rate of
+                            filing a standard grievance form.</li>
+                        <li><strong>Error Rate Reduction:</strong> Monitoring whether the live password checklists and
+                            PNR auto-fills successfully decrease form validation failures.</li>
+                        <li><strong>False Alarm Metrics:</strong> Tracking if the physical duration gate on the SOS
+                            alert successfully minimizes accidental emergency triggers.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="cs-cta-wrapper reveal-item">
+                <a href="https://www.figma.com/design/IfjVgiLQCXMc5FPG4eeQgD/Redesigning-RailMadad-App?node-id=7-2"
+                    target="_blank" class="figma-btn">
+                    View Figma File
+                    <svg xmlns="http://w3.org" viewBox="0 0 40 60" width="40" height="60">
+                        <!-- Top Left: Red Semi-circle -->
+                        <path d="M10 0a10 10 0 0 0 0 20h10V0H10z" fill="#F24E1E" />
+                        <!-- Top Right: Orange Circle -->
+                        <path d="M30 20a10 10 0 1 0 0-20H20v20h10z" fill="#FF7262" />
+                        <!-- Middle Left: Purple Semi-circle -->
+                        <path d="M10 20a10 10 0 0 0 0 20h10V20H10z" fill="#A259FF" />
+                        <!-- Center: Blue Circle -->
+                        <path d="M30 40a10 10 0 1 0-10-10v10h10z" fill="#1ABC9C" />
+                        <!-- Bottom Left: Green Teardrop / Pin shape -->
+                        <path d="M10 40a10 10 0 0 0 0 20 10 10 0 0 0 10-10V40H10z" fill="#0ACF83" />
+                    </svg>
+                </a>
+            </div>
+
+        </article>
+    </div>
+</body>
+
+</html>

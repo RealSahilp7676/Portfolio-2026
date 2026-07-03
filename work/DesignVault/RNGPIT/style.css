@@ -1,0 +1,288 @@
+/* 
+    RNGPIT Case Study Custom Styles
+    Matches Figma Design: Portfolio-2026 > RNGPIT Project
+*/
+
+:root {
+    --color-bg: #FFFFFF;
+    --color-text-main: #000000;
+    --color-text-muted: #8d8d8d;
+    --color-text-body: #000000;
+    --font-heading: 'Bricolage Grotesque', sans-serif;
+    --font-body: 'Sora', sans-serif;
+    --border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.rngpit-body {
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    font-family: var(--font-body);
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    line-height: 28px;
+    overflow-x: hidden;
+}
+
+/* ── Back Button (Figma: Bricolage Medium 16px, border #bababa) ── */
+.back-btn {
+    position: fixed;
+    top: 80px;
+    left: 144px;
+    z-index: 9999;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 1px solid #bababa;
+    color: var(--color-text-main);
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.02);
+}
+
+/* ── Container ── */
+.case-study-content {
+    width: 92vw;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 200px 0 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+/* ── Header (centered) ── */
+.cs-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* Figma: Bricolage Bold 40px */
+.cs-title {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    line-height: normal;
+    color: #000;
+}
+
+/* Figma: Sora Light 20px / 28px, width 560px */
+.cs-subtitle {
+    font-family: var(--font-body);
+    font-size: 20px;
+    line-height: 28px;
+    color: #000;
+    margin: 0 auto;
+    font-weight: 300;
+    max-width: 560px;
+}
+
+/* ── Sections ── */
+.cs-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Figma: Bricolage Bold 32px, center-aligned */
+.cs-heading {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    line-height: normal;
+    text-align: center;
+    color: #000;
+}
+
+/* Figma: Sora Light 16px / 28px, color black, width 760px, LEFT-aligned */
+.cs-text-block {
+    max-width: 760px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #000;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.cs-text-block p {
+    margin: 0 0 28px;
+}
+
+.cs-text-block p:last-child {
+    margin-bottom: 0;
+}
+
+/* Figma Workspace Review Note - Sora Light italic/muted style */
+.cs-text-block p.workspace-note {
+    font-style: italic;
+    color: #555555;
+    margin-top: 28px;
+}
+
+/* ── Images ── */
+.cs-image-wrapper {
+    margin: 0 auto;
+    max-width: 988px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cs-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0;
+}
+
+/* Figma: Sora Regular 14px, color #8d8d8d, center-aligned */
+.cs-figcaption {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-text-muted);
+    text-align: center;
+    margin-top: 16px;
+}
+
+/* ── CTA Button (Figma: offset shadow design) ── */
+.cta-section {
+    align-items: center;
+    margin-top: 40px;
+}
+
+.figma-btn-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 238px;
+    height: 52px;
+}
+
+.figma-btn-shadow {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 234px;
+    height: 48px;
+    background: #121212;
+    border-radius: 999px;
+    z-index: 1;
+}
+
+.figma-btn-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 234px;
+    height: 48px;
+    background: #FFFFFF;
+    color: #000;
+    box-sizing: border-box;
+    border-radius: 999px;
+    text-decoration: none;
+    font-family: var(--font-heading);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    border: 0.5px solid #636161;
+    transition: transform 0.2s ease;
+    z-index: 2;
+    padding: 0 24px;
+}
+
+.figma-btn-custom:hover {
+    transform: translate(2px, 2px);
+}
+
+.figma-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+/* ── Reveal Animations ── */
+.reveal-item {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                filter 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, filter, transform;
+}
+
+.reveal-item.is-visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+/* ── Responsive Overrides ── */
+@media (max-width: 1024px) {
+    .back-btn {
+        left: 40px;
+        top: 40px;
+    }
+    
+    .case-study-content {
+        padding-top: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .case-study-content {
+        padding: 120px 0 60px;
+        gap: 60px;
+    }
+
+    .cs-title {
+        font-size: 32px;
+    }
+
+    .cs-heading {
+        font-size: 24px;
+    }
+
+    .cs-subtitle {
+        font-size: 18px;
+    }
+
+    .back-btn span {
+        display: none;
+    }
+
+    .back-btn {
+        top: 24px;
+        left: 24px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .case-study-content {
+        padding-top: 100px;
+    }
+}

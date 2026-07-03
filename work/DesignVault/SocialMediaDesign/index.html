@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Content Designs | Sahil Pradhan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="social-design-body">
+
+    <!-- Back Button -->
+    <a href="../../../index.html#design-vault" class="back-btn" aria-label="Back to Design Vault">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" width="20" height="20">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Back to Vault</span>
+    </a>
+
+    <!-- Page Content -->
+    <main class="case-study-content">
+
+        <!-- Hero Section -->
+        <header class="cs-header reveal-item">
+            <h1 class="cs-title">Social Media Content Designs</h1>
+            <p class="cs-subtitle">Designing Engaging Posts with Brand Consistency</p>
+        </header>
+
+        <!-- Overview Section -->
+        <section class="cs-section reveal-item">
+            <h2 class="cs-heading">Overview</h2>
+            <div class="cs-text-block">
+                <p>To strengthen the connection between product design and brand presence, I led the creation of social media assets that translated the brand’s visual identity into engaging digital content. The focus was on maintaining consistency across channels while ensuring each design aligned with the broader brand ecosystem.</p>
+                <p>Using modern design principles, structured layouts, and clear typographic hierarchies, I created content that was both recognizable and impactful. This project demonstrated my ability to adapt a unified brand voice across diverse digital formats without compromising design standards.</p>
+            </div>
+        </section>
+
+        <!-- Gallery / Slider Section -->
+        <section class="cs-section reveal-item slider-section">
+            
+            <!-- Main Display Area -->
+            <div class="dv-gallery-display" id="gallery-display">
+                <div class="dv-display-inner">
+                    <img src="" alt="Active Poster" class="dv-display-img" id="active-poster-img">
+                </div>
+            </div>
+
+            <!-- Carousel Controls & Thumbnails -->
+            <div class="dv-carousel-controls">
+                
+                <!-- Left Chevron Button -->
+                <button class="dv-nav-arrow dv-arrow-left" id="dv-prev-btn" aria-label="Previous Poster">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 19L8.5 12L15.5 5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <!-- Thumbnails Track container -->
+                <div class="dv-thumbnails-container">
+                    
+                    <!-- Left Thumbnail (Previous) -->
+                    <div class="dv-thumb-card-wrapper" id="prev-thumb-wrapper">
+                        <button class="dv-thumb-card" id="prev-thumb-btn">
+                            <img src="" alt="Previous Poster Thumbnail" class="dv-thumb-card-img">
+                        </button>
+                        <p class="dv-thumb-title" id="prev-thumb-title">Previous Post</p>
+                    </div>
+
+                    <!-- Middle Thumbnail (Active) -->
+                    <div class="dv-thumb-card-wrapper active-wrapper" id="active-thumb-wrapper">
+                        <button class="dv-thumb-card" id="active-thumb-btn">
+                            <!-- Progress/Timer bar indicator -->
+                            <div class="dv-timer-bar-container">
+                                <div class="dv-timer-bar-fill" id="timer-bar-fill"></div>
+                            </div>
+                            <img src="" alt="Active Poster Thumbnail" class="dv-thumb-card-img">
+                        </button>
+                        <p class="dv-thumb-title active-title" id="active-thumb-title">Active Post</p>
+                    </div>
+
+                    <!-- Right Thumbnail (Next) -->
+                    <div class="dv-thumb-card-wrapper" id="next-thumb-wrapper">
+                        <button class="dv-thumb-card" id="next-thumb-btn">
+                            <img src="" alt="Next Poster Thumbnail" class="dv-thumb-card-img">
+                        </button>
+                        <p class="dv-thumb-title" id="next-thumb-title">Next Post</p>
+                    </div>
+
+                </div>
+
+                <!-- Right Chevron Button -->
+                <button class="dv-nav-arrow dv-arrow-right" id="dv-next-btn" aria-label="Next Poster">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 5L15.5 12L8.5 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

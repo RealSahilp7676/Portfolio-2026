@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DieselWorld Case Study | Sahil Pradhan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Serif+Display&family=IBM+Plex+Mono&family=Lora:ital,wght@0,400..700;1,400..700&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dieselworld-body">
+
+    <!-- Back Button -->
+    <a href="../../index.html#projects" class="back-btn" aria-label="Back to Featured Projects">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" width="20" height="20">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Back to Projects</span>
+    </a>
+
+    <!-- Page Content -->
+    <main class="case-study-content">
+
+        <!-- Hero Section -->
+        <header class="cs-header reveal-item">
+            <h1 class="cs-title">Revamping Diesel World E-Commerce Web</h1>
+            <p class="cs-subtitle">Transforming Legacy Automotive Retail Experiences</p>
+        </header>
+
+        <!-- Hero Image -->
+        <section class="cs-section reveal-item">
+            <figure class="cs-image-wrapper hero-img">
+                <img src="../../assets/work/DieselWorld/dw-project-title-image.webp"
+                    alt="Diesel World E-Commerce Overview">
+            </figure>
+        </section>
+
+        <!-- ════════════════ SPECIAL MESSAGE ════════════════ -->
+        <section class="cs-section reveal-item">
+            <div class="special-message-block">
+                <div class="special-message-header">
+                    <span class="special-message-icon" style="font-size: 24px; line-height: 28px;">💡</span>
+                    <span class="special-message-title"> My First Step into Real-World Design</span>
+                </div>
+                <p class="special-message-text">This project holds a special place in my journey as a designer. It was
+                    the first time I moved beyond hypothetical briefs and designed for a real e-commerce business with
+                    real customers, real constraints, and real outcomes. Seeing how every design decision could
+                    influence
+                    both customer experiences and business goals made the work feel meaningful in a way classroom
+                    projects never could.</p>
+            </div>
+        </section>
+
+        <!-- ════════════════ OVERVIEW ════════════════ -->
+        <section class="cs-section reveal-item">
+            <h2 class="cs-heading">Overview</h2>
+            <div class="cs-text-block">
+                <p>Diesel World is an established global aftermarket leader specializing in premium diesel engine
+                    solutions and components. Over a tight 3-month timeline, my core responsibility as the UI/UX design
+                    intern was to spearhead the structural redesign and responsive evolution of the company's digital
+                    platform.</p>
+                <p>While a commercial website features many moving parts, my assigned scope of ownership was strictly
+                    locked to designing the foundational user ecosystem. This focused lifecycle included the following
+                    core modules:</p>
+                <ul class="component-desc-list">
+                    <li><strong>Role</strong>: Discovery &amp; Entry: The Home Page, About Us, and Contact layouts.</li>
+                    <li><strong>Timeline</strong>: Product Category Listings, Detailed Product Pages, and the
+                        interactive Side-by-Side Product Comparison Engine.</li>
+                    <li><strong>Scope</strong>: User Authentication (Login/Register), the Shopping Cart, and the
+                        deep-tier Account Profile Management matrix.</li>
+                    <li><strong>Tools Used</strong>: Figma, FigJam</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ════════════════ CHAPTER 01 ════════════════ -->
+        <section class="cs-section reveal-item">
+            <span class="cs-chapter-label">CHAPTER - 01</span>
+            <h2 class="cs-heading">The Usability Friction</h2>
+            <div class="cs-text-block">
+                <p>Before opening Figma, I audited the original live website to identify why it was failing to convert
+                    corporate clients and industrial buyers. The platform suffered from several critical structural
+                    flaws:</p>
+                <ul class="component-desc-list">
+                    <li><strong>Inconsistent Visual Grammar</strong>: The lack of a unified design language or
+                        standardized spacing guidelines created massive visual misalignment across pages, severely
+                        damaging the brand's professional credibility.</li>
+                    <li><strong>Navigational Disorientation</strong>: Information layout lacked a defined visual
+                        hierarchy. Users struggled to understand or naturally navigate between key business sections,
+                        leading to high cognitive load and friction during product discovery.</li>
+                    <li><strong>Zero Mobile Adaptability</strong>: The legacy system did not implement a responsive
+                        design grid. This resulted in broken layouts, un-clickable touch targets, and poor usability
+                        when
+                        viewed on tablet or mobile form factors.</li>
+                    <li><strong>Scalability Bottlenecks</strong>: Because components were built statically without
+                        reusable asset rules, pushing updates or expanding the product catalog required repetitive
+                        design
+                        overhead.</li>
+                </ul>
+            </div>
+            <figure class="cs-image-wrapper reveal-item" style="max-width: 956px; margin: 0 auto;">
+                <img src="../../assets/work/DieselWorld/homepage-design-audit.webp" alt="Homepage Design Audit">
+                <figcaption
+                    style="margin-top: 16px; font-family: 'Sora', sans-serif; font-size: 14px; color: #8d8d8d; text-align: center;">
+                    Homepage design audit</figcaption>
+            </figure>
+        </section>
+
+        <!-- ════════════════ CHAPTER 02 ════════════════ -->
+        <section class="cs-section reveal-item">
+            <span class="cs-chapter-label">CHAPTER - 02</span>
+            <h2 class="cs-heading">Tactical Discovery</h2>
+
+            <!-- Competitive Analysis -->
+            <h3 class="cs-subheading">Competitive Analysis &amp; Industrial Benchmarking</h3>
+            <div class="cs-text-block">
+                <p>A benchmarking study was conducted to identify effective design patterns, user expectations, and
+                    conversion strategies across industrial B2B platforms. The research focused on product organization,
+                    technical data presentation, and streamlined procurement flows to build a scalable and user-friendly
+                    platform structure.</p>
+                <p>Industrial B2B platforms require a specialized layout approach focused on search speed, clear
+                    specification data, and highly structured technical listings. To understand successful conversion
+                    patterns in this sector, I analyzed leading digital competitors and substitute frameworks:</p>
+                <ul class="component-desc-list">
+                    <li><strong style="text-decoration: underline;">TurboTech</strong>: Evaluated for its industrial
+                        layout structures and product category breakdown models.</li>
+                    <li><strong>Boten Diesel</strong>: Analyzed to dissect presentation patterns for high-precision
+                        mechanical parts.</li>
+                    <li><strong>OUS Tech</strong>: Studied to evaluate B2B workflow systems, navigation hierarchies, and
+                        user data presentation.</li>
+                </ul>
+                <p>This benchmarking phase provided crucial insight into how modern automotive and industrial sites
+                    organize complex product parameters, manage filtered search strings, and build intuitive conversion
+                    pipelines.</p>
+            </div>
+
+            <!-- Behavioral Mapping -->
+            <h3 class="cs-subheading">Behavioral Mapping: The User Journey Map</h3>
+            <div class="cs-text-block">
+                <p>To align my design choices directly with customer behavior, I constructed a comprehensive User
+                    Journey
+                    Map to track a user's experience across 7 distinct operational phases.</p>
+                <ul class="component-desc-list">
+                    <li><strong>The Framework</strong>: This behavioral map systematically tracks the user through
+                        Entry,
+                        Browse, Evaluate, Select, Cart, Contact, and Profile lifecycles.</li>
+                    <li><strong>Friction vs. Resolution</strong>: At each stage, I isolated specific real-world user
+                        pain
+                        points—such as "insufficient information during evaluation" or "complex signup processes"—and
+                        mapped them directly to tangible UI solutions, like clear call-to-actions, side-by-side product
+                        comparisons, and simplified form flows.</li>
+                </ul>
+            </div>
+            <figure class="cs-image-wrapper reveal-item" style="max-width: 760px; margin: 0 auto;">
+                <img src="../../assets/work/DieselWorld/user-journey.webp" alt="User Journey Mapping">
+                <figcaption
+                    style="margin-top: 16px; font-family: 'Sora', sans-serif; font-size: 14px; color: #8d8d8d; text-align: center;">
+                    User Journey Mapping</figcaption>
+            </figure>
+
+            <!-- Architectural Scoping -->
+            <h3 class="cs-subheading">Architectural Scoping: The Information Architecture (System IA)</h3>
+            <div class="cs-text-block">
+                <p>With behavioral workflows defined, I translated those pathways into a rigid structural blueprint
+                    using
+                    an Information Architecture diagram to map content hierarchy and prevent navigational clutter.</p>
+                <ul class="component-desc-list">
+                    <li><strong>Structural Hierarchy</strong>: The architecture establishes the Homepage as the central
+                        launchpad, dividing user navigation into clean, intuitive main branches: Products, About Us,
+                        Contact, Cart, Profile, and Auth.</li>
+                    <li><strong>Granular Data Nodes</strong>: To optimize the product browsing experience, the Products
+                        branch was designed to route smoothly into Category grids, structured listings, detailed product
+                        specs, and the compare feature. Concurrently, the Profile branch was mapped into clean, sub-tier
+                        nodes including Account Details, Order Tracking, Saved Addresses, and Wishlist states to ensure
+                        deep utility remains highly accessible.</li>
+                </ul>
+            </div>
+            <figure class="cs-image-wrapper reveal-item" style="max-width: 760px; margin: 0 auto;">
+                <img src="../../assets/work/DieselWorld/information-architecture.webp" alt="Information Architecture">
+                <figcaption
+                    style="margin-top: 16px; font-family: 'Sora', sans-serif; font-size: 14px; color: #8d8d8d; text-align: center;">
+                    Information Architecture (IA)</figcaption>
+            </figure>
+        </section>
+
+        <!-- ════════════════ CHAPTER 03 ════════════════ -->
+        <section class="cs-section reveal-item">
+            <span class="cs-chapter-label">CHAPTER - 03</span>
+            <h2 class="cs-heading">Design Tokens Architecture</h2>
+
+            <div class="cs-text-block">
+                <p>To ensure consistency, scalability, and efficient developer handoff, the Diesel World platform was
+                    built using a multi-layered design token architecture rather than relying on static color values and
+                    hardcoded design decisions. The system was organized within Figma Variables, creating a centralized
+                    source of truth for visual styling, responsive behavior, and component configuration.</p>
+                <ul class="component-desc-list">
+                    <li><strong>Brand Collection</strong>: Defines the platform's primitive color palette and
+                        foundational design values, serving as the source layer for all higher-level tokens.</li>
+                    <li><strong>Alias Collection</strong>: Maps primitive tokens to semantic roles such as Primary,
+                        Success, Error, Warning, Information, Foundation, and Neutral, creating meaningful and
+                        maintainable design decisions.</li>
+                    <li><strong>Mapped Collection</strong>: Connects semantic tokens to specific UI surfaces and
+                        components, including backgrounds, text, borders, cards, and interactive elements.</li>
+                    <li><strong>Responsive Collection</strong>: Stores adaptive values for Desktop, Tablet, and Mobile
+                        breakpoints, enabling consistent spacing, sizing, and layout behavior across devices.</li>
+                </ul>
+            </div>
+            <p
+                style="font-family: 'Sora', sans-serif; font-size: 14px; color: #8d8d8d; text-align: center; margin-top: 24px;">
+                Design System Architecture</p>
+        </section>
+
+        <!-- ════════════════ CHAPTER 04 ════════════════ -->
+        <section class="cs-section reveal-item">
+            <span class="cs-chapter-label">CHAPTER - 04</span>
+            <h2 class="cs-heading">Modular Component Library</h2>
+
+            <div class="cs-text-block">
+                <p>To support the platform's growing ecosystem of dashboards, product listings, filtering workflows, and
+                    administrative tools, a comprehensive component library was developed from scratch. Each component
+                    was designed as a scalable, reusable system with built-in responsiveness, semantic token
+                    integration,
+                    and clearly defined interaction states.</p>
+                <ul class="component-desc-list">
+                    <li><strong>Buttons</strong>: Configured with scalable size variants (S, M, L, XL), hierarchy levels
+                        (Primary, Secondary Color, Secondary Gray, Tertiary, Link), interactive states (Default, Hover,
+                        Focused, Disabled), and optional leading/trailing icon support.</li>
+                    <li><strong>Badges</strong>: Lightweight status indicators used for categories, labels, promotions,
+                        and workflow states, powered by semantic color tokens for clear visual communication.</li>
+                    <li><strong>Dropdowns</strong>: Structured selection components featuring searchable options,
+                        category
+                        grouping, validation states, and responsive behavior for complex product and part lookup
+                        workflows.</li>
+                    <li><strong>Toggles</strong>: Binary selection controls used for immediate on/off actions such as
+                        settings, preferences, and feature activation.</li>
+                    <li><strong>Checkboxes</strong>: Multi-select controls supporting selected, unselected, disabled,
+                        and
+                        indeterminate states for filtering and bulk-selection workflows.</li>
+                </ul>
+            </div>
+            <figure class="cs-image-wrapper reveal-item" style="max-width: 760px; margin: 0 auto;">
+                <img src="../../assets/work/DieselWorld/multi-state-components-library.webp"
+                    alt="Multi-State Components Library">
+                <figcaption
+                    style="margin-top: 16px; font-family: 'Sora', sans-serif; font-size: 14px; color: #8d8d8d; text-align: center;">
+                    Multi-State Components Library</figcaption>
+            </figure>
+        </section>
+
+        <!-- ════════════════ CHAPTER 05 ════════════════ -->
+        <section class="cs-section reveal-item">
+            <span class="cs-chapter-label">CHAPTER - 05</span>
+            <h2 class="cs-heading">Responsive High-Fi Delivery</h2>
+
+            <div class="cs-text-block">
+                <p>Transforming the design system into a functional product experience required more than assembling
+                    components. It involved establishing clear visual hierarchy, balanced layouts, and responsive
+                    behaviors across every screen. Using the component library and token architecture as a foundation, I
+                    designed fully responsive interfaces for Desktop, Tablet, and Mobile breakpoints across the
+                    platform's core user journeys.</p>
+                <p>The final experience consisted of <strong>9</strong> key pages, organized into three primary
+                    categories:</p>
+
+                <p class="category-label">Discovery &amp; Branding</p>
+                <ul class="cs-meta-list" style="margin-top: 0;">
+                    <li>Home Page</li>
+                    <li>About Us Page</li>
+                    <li>Contact Us Page</li>
+                </ul>
+
+                <p class="category-label">E-Commerce &amp; Product Exploration</p>
+                <ul class="cs-meta-list" style="margin-top: 0;">
+                    <li>Product Listing Pages</li>
+                    <li>Product Detail Pages</li>
+                    <li>Floating Chatbot Experience</li>
+                </ul>
+
+                <p class="category-label">Transactional &amp; Account Management</p>
+                <ul class="cs-meta-list" style="margin-top: 0;">
+                    <li>Login Experience</li>
+                    <li>Cart System</li>
+                    <li>Profile Dashboard Ecosystem</li>
+                </ul>
+            </div>
+
+            <!-- Home Page: Structural Evolution -->
+            <h3 class="cs-subheading">Home Page: Structural Evolution</h3>
+            <div class="cs-text-block">
+                <p>The Home Page evolved from a low-fidelity structural blueprint into a polished, conversion-focused
+                    landing experience. The initial wireframe established content hierarchy and layout foundations,
+                    while
+                    the final design introduced strong visual storytelling, brand identity, and responsive interactions.
+                </p>
+                <ul class="component-desc-list">
+                    <li><strong>Hero Section Transformation</strong>: Upgraded the placeholder header into a premium
+                        dark-themed hero section with the value proposition, "Powering Diesel Performance with Trusted
+                        Expertise," strengthening brand positioning and first impressions.</li>
+                    <li><strong>Enhanced Content Hierarchy</strong>: Replaced generic content blocks with structured
+                        card-based layouts for better scannability and product discovery. Featured key categories like
+                        Turbochargers, Fuel Injectors, and Test Equipment, alongside a streamlined services grid.</li>
+                    <li><strong>B2B Trust &amp; Credibility</strong>: Converted the basic brand strip into a dedicated
+                        Partner Brands showcase featuring BOSCH, MOTORPAL, Lucas Indian Service Limited, DiSA, and
+                        Delphi, reinforcing industry expertise and trust.</li>
+                    <li><strong>Editorial Storytelling</strong>: Transformed a placeholder section into the Our Stories
+                        module, using workshop imagery and branded content to highlight milestones, events, and
+                        participation in Automechanika New Delhi.</li>
+                    <li><strong>Responsive Optimization</strong>: Optimized the experience across Desktop, Tablet, and
+                        Mobile, ensuring consistent hierarchy, readability, and usability on all devices.</li>
+                </ul>
+            </div>
+            <figure class="cs-image-wrapper reveal-item" style="max-width: 900px; margin: 0 auto;">
+                <img src="../../assets/work/DieselWorld/home-page-side-by-side-comparison.webp"
+                    alt="Home Page Side-by-Side Comparison">
+                <figcaption
+                    style="margin-top: 16px; font-family: 'Sora', sans-serif; font-size: 14px; color: #8d8d8d; text-align: center;">
+                    Home Page Side-by-Side Comparison</figcaption>
+            </figure>
+
+            <!-- Product Directory & Side-by-Side Compare Engine -->
+            <h3 class="cs-subheading">Product Directory &amp; Side-by-Side Compare Engine</h3>
+            <div class="cs-text-block">
+                <p>The product directory was designed as a scalable, card-based catalog that adapts seamlessly across
+                    devices while maintaining consistent browsing and discovery patterns. To support technical
+                    purchasing
+                    decisions, a dedicated comparison interface was created to simplify side-by-side product evaluation.
+                </p>
+                <ul class="component-desc-list">
+                    <li><strong>Responsive Product Grid</strong>: The layout dynamically adjusts from a 3-column grid on
+                        Desktop, to 2 columns on Tablet, and a single-column stack on Mobile, ensuring optimal
+                        readability and product visibility across all screen sizes.</li>
+                    <li><strong>Adaptive Filtering Experience</strong>: Desktop users can access filtering tools through
+                        a dedicated sidebar containing price ranges, brand selections, and stock availability filters.
+                        On
+                        smaller screens, this functionality transforms into a slide-out filter drawer, preserving screen
+                        space while keeping advanced filtering easily accessible.</li>
+                    <li><strong>Enhanced Browsing Controls</strong>: Active filter chips and sorting controls provide
+                        clear visibility into applied filters, allowing users to quickly refine product results and
+                        navigate large catalogs more efficiently.</li>
+                    <li><strong>Mobile-Optimized Comparison View</strong>: Rather than compressing multiple columns into
+                        a limited viewport, the comparison experience transitions into a vertically stacked
+                        specification
+                        layout. This approach improves readability, eliminates excessive horizontal scrolling, and
+                        maintains a clear review experience on mobile devices.</li>
+                </ul>
+            </div>
+
+            <!-- Product directory images with viewport labels -->
+            <div class="viewport-labels reveal-item">
+                <span class="viewport-label">Desktop View</span>
+                <span class="viewport-label">Tablet View</span>
+                <span class="viewport-label">Mobile View</span>
+            </div>
+            <figure class="cs-image-wrapper reveal-item" style="max-width: 900px; margin: 0 auto;">
+                <img src="../../assets/work/DieselWorld/product-directory-layout.webp" alt="Product Directory Layout">
+            </figure>
+            <figure class="cs-image-wrapper reveal-item" style="max-width: 900px; margin: 0 auto;">
+                <img src="../../assets/work/DieselWorld/compare-feature-layout.webp" alt="Compare Feature Layout">
+                <figcaption
+                    style="margin-top: 16px; font-family: 'Sora', sans-serif; font-size: 14px; color: #8d8d8d; text-align: center;">
+                    Responsive Product Directory &amp; Compare Feature Layout</figcaption>
+            </figure>
+
+            <!-- Individual Product Page -->
+            <h3 class="cs-subheading">Individual Product Page: High-Density Information Architecture</h3>
+            <div class="cs-text-block">
+                <p>Designed for industrial B2B buyers, the product page organizes complex technical, commercial, and
+                    logistical information into a structured three-tab experience. This approach enables users to
+                    quickly
+                    validate specifications, assess credibility, and make informed purchasing decisions without
+                    overwhelming the interface.</p>
+                <ul class="component-desc-list">
+                    <li><strong>Above-the-Fold Conversion Zone</strong>: Features a breadcrumb trail, interactive
+                        product
+                        gallery, pricing information, stock status, quantity controls, and a prominent Add to Cart
+                        action
+                        to streamline product discovery and purchasing.</li>
+                    <li><strong>Technical Specifications &amp; Compatibility</strong>: Dedicated specification tab
+                        presenting key product details such as brand, model number, category, engine configuration, and
+                        material information, alongside an expandable vehicle compatibility section for fitment
+                        verification.</li>
+                    <li><strong>Customer Reviews &amp; Social Proof</strong>: Review interface containing sorting
+                        controls, review submission actions, and structured customer feedback cards that help establish
+                        product credibility and long-term performance validation.</li>
+                    <li><strong>Shipping &amp; Commercial Information</strong>: Logistics-focused section displaying
+                        delivery timelines, shipping policies, return guidelines, invoice information, and available
+                        offers in a highly scannable card-based layout.</li>
+                    <li><strong>Related Products &amp; Cross-Selling</strong>: A persistent product recommendation
+                        carousel encourages further exploration by surfacing complementary products and accessories with
+                        quick Add to Cart functionality.</li>
+                </ul>
+            </div>
+            <figure class="cs-image-wrapper reveal-item" style="max-width: 960px; margin: 0 auto;">
+                <img src="../../assets/work/DieselWorld/individual-product-page-layout.webp"
+                    alt="Individual Product Page">
+                <figcaption
+                    style="margin-top: 16px; font-family: 'Sora', sans-serif; font-size: 14px; color: #8d8d8d; text-align: center;">
+                    Individual Product Page Layout</figcaption>
+            </figure>
+
+            <!-- Credibility & Operational Support -->
+            <h3 class="cs-subheading">Credibility &amp; Operational Support: About Us &amp; Contact Foundations</h3>
+            <div class="cs-text-block">
+                <p>The About Us and Contact Us pages were redesigned to strengthen trust, improve clarity, and support
+                    high-intent B2B users. Both interfaces transform dense corporate information into structured,
+                    visually scannable modules that reinforce Diesel World's credibility while simplifying communication
+                    and inquiry workflows.</p>
+                <ul class="component-desc-list">
+                    <li><strong>Brand Story Foundation (About Us)</strong>: Combines workshop imagery with a concise
+                        corporate narrative under "Welcome to Diesel World Pvt. Ltd." to immediately establish
+                        authenticity, scale, and domain expertise in diesel components and aftermarket distribution.
+                    </li>
+                    <li><strong>Value Proposition Grid ("We Offer")</strong>: A four-card icon-based system highlighting
+                        core strengths—Expert Services, Quality Products, Industry Experience, and Warranty
+                        Coverage—enabling fast comprehension of business capabilities.</li>
+                    <li><strong>Performance &amp; Trust Metrics ("Why Choose Us")</strong>: A high-contrast data section
+                        presenting key credibility indicators such as 1000+ Satisfied Customers, 4000+ Projects
+                        Completed, 50+ Partner Companies, and 11+ Expert Professionals.</li>
+                    <li><strong>Editorial Storytelling Module ("Our Stories")</strong>: A dynamic carousel showcasing
+                        real-world engagement and industry presence, including participation in events like
+                        Automechanika
+                        New Delhi 2026, reinforcing ongoing brand relevance.</li>
+                    <li><strong>Contact &amp; Support Interface</strong>: The Contact Us page integrates a map-based
+                        location block with a detailed address card, followed by structured FAQs using expandable
+                        accordions that address shipping, returns, tracking, and services.</li>
+                    <li><strong>Lead Capture System</strong>: A streamlined contact form collects essential user
+                        information (Name, Email, Phone, Subject, Message) and concludes with a prominent Send Message
+                        CTA, enabling efficient inquiry handling and conversion-focused communication.</li>
+                </ul>
+            </div>
+            <figure class="cs-image-wrapper reveal-item" style="max-width: 760px; margin: 0 auto;">
+                <img src="../../assets/work/DieselWorld/about-us-and-contact-us-page.webp"
+                    alt="About Us and Contact Us Page">
+                <figcaption
+                    style="margin-top: 16px; font-family: 'Sora', sans-serif; font-size: 14px; color: #8d8d8d; text-align: center;">
+                    About Us and Contact Us Page View</figcaption>
+            </figure>
+        </section>
+
+        <!-- ════════════════ CHAPTER 06 ════════════════ -->
+        <section class="cs-section reveal-item">
+            <span class="cs-chapter-label">CHAPTER - 06</span>
+            <h2 class="cs-heading">Strategic Reflection &amp; Key Learnings</h2>
+
+            <div class="cs-text-block">
+                <p>Redesigning the Diesel World platform was a key milestone in my early career, marking the shift from
+                    theory to real-world product design. My first internship in a niche industrial sector pushed me to
+                    solve complex usability challenges for corporate users and move beyond classroom exercises.</p>
+            </div>
+
+            <h3 class="cs-subheading">Key Growth Dimensions</h3>
+            <div class="cs-text-block">
+                <ul class="component-desc-list">
+                    <li><strong>Real-World Problem Solving</strong>: This project shifted my perspective from simply
+                        creating attractive standalone screens to analyzing existing industrial platform vulnerabilities
+                        and systematically engineering intuitive layout solutions.</li>
+                    <li><strong>Mastering Complex Information Density</strong>: Navigating detailed mechanical part
+                        specifications, side-by-side comparison matrices, and deep-tier nested profile states
+                        substantially leveled up my structural layout discipline and content prioritization skills.</li>
+                    <li><strong>System-Driven Component Thinking</strong>: Building a complete design system from
+                        scratch
+                        taught me the value of scalability, multi-state token variations, and strict multi-device
+                        responsive rules.</li>
+                    <li><strong>Designing for Enterprise Credibility</strong>: I learned how critical visual consistency
+                        and trust infrastructures—such as prominent partner brand matrices and transparent fulfillment
+                        cards—are to driving conversions in a competitive B2B sector</li>
+                </ul>
+            </div>
+
+            <!-- Looking Ahead -->
+            <h3 class="cs-subheading">Looking Ahead</h3>
+            <div class="cs-text-block">
+                <p>"This internship proved that good design isn't a luxury for industrial platforms; it is a core
+                    business requirement. While the immediate scope of this conceptual sprint is complete, the scalable
+                    foundation I have built ensures the ecosystem is fully prepared for future interactive testing, live
+                    deployment, and long-term expansion."</p>
+            </div>
+
+            <!-- View Figma File CTA Button -->
+            <div style="text-align: center; margin-top: 40px;">
+                <div class="figma-btn-wrapper">
+                    <span class="figma-btn-shadow"></span>
+                    <a href="https://www.figma.com/design/f1d1JzfxuUgbLQsqCcIwMB/Diesel-World-Wireframes?node-id=13-974&t=Uqk8wbyKUXhoeA4T-1"
+                        target="_blank" rel="noopener noreferrer" class="figma-btn-custom">
+                        View Figma File
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M8 24C10.208 24 12 22.208 12 20V16H8C5.792 16 4 17.792 4 20C4 22.208 5.792 24 8 24Z"
+                                fill="#0ACF83" />
+                            <path d="M4 12C4 9.792 5.792 8 8 8H12V16H8C5.792 16 4 14.208 4 12Z" fill="#A259FF" />
+                            <path d="M4 4C4 1.792 5.792 0 8 0H12V8H8C5.792 8 4 6.208 4 4Z" fill="#F24E1E" />
+                            <path d="M12 0H16C18.208 0 20 1.792 20 4C20 6.208 18.208 8 16 8H12V0Z" fill="#FF7262" />
+                            <path
+                                d="M20 12C20 14.208 18.208 16 16 16C13.792 16 12 14.208 12 12C12 9.792 13.792 8 16 8C18.208 8 20 9.792 20 12Z"
+                                fill="#1ABCFE" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

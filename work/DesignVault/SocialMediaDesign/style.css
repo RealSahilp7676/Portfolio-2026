@@ -1,0 +1,450 @@
+/* 
+    Social Media Design Project Page Custom Styles
+    Matches Figma Design: Portfolio-2026 > Social Media Design Project
+*/
+
+:root {
+    --color-bg: #FFFFFF;
+    --color-text-main: #000000;
+    --color-text-muted: #8d8d8d;
+    --font-heading: 'Bricolage Grotesque', sans-serif;
+    --font-body: 'Sora', sans-serif;
+    --border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.social-design-body {
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    font-family: var(--font-body);
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    line-height: 28px;
+    overflow-x: hidden;
+}
+
+/* ── Back Button (Figma: Bricolage Medium 16px, border #bababa) ── */
+.back-btn {
+    position: fixed;
+    top: 80px;
+    left: 144px;
+    z-index: 9999;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 1px solid #bababa;
+    color: var(--color-text-main);
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.02);
+}
+
+/* ── Container ── */
+.case-study-content {
+    width: 92vw;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 200px 0 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+/* ── Header (centered) ── */
+.cs-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* Figma: Bricolage Bold 40px */
+.cs-title {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    line-height: normal;
+    color: #000;
+}
+
+/* Figma: Sora Light 20px / 28px, width 560px */
+.cs-subtitle {
+    font-family: var(--font-body);
+    font-size: 20px;
+    line-height: 28px;
+    color: #000;
+    margin: 0 auto;
+    font-weight: 300;
+    max-width: 560px;
+}
+
+/* ── Sections ── */
+.cs-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Figma: Bricolage Bold 32px, center-aligned */
+.cs-heading {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    line-height: normal;
+    text-align: center;
+    color: #000;
+}
+
+/* Figma: Sora Light 16px / 28px, color black, width 760px, LEFT-aligned */
+.cs-text-block {
+    max-width: 760px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #000;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.cs-text-block p {
+    margin: 0 0 28px;
+}
+
+.cs-text-block p:last-child {
+    margin-bottom: 0;
+}
+
+/* ── Gallery / Slider Styles ── */
+.slider-section {
+    align-items: center;
+    width: 100%;
+}
+
+/* Figma: Display Frame bg dynamically assigned, rounded 16px, shadow 25% */
+.dv-gallery-display {
+    width: 760px;
+    height: 540px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    transition: background-color 0.4s ease;
+    margin: 0 auto;
+}
+
+/* Main poster wrapper size: 400x500px, rounded 8px, shadow 25% */
+.dv-display-inner {
+    width: 400px;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.25);
+    background: #000000;
+}
+
+.dv-display-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* ── Carousel Controls container ── */
+.dv-carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    margin-top: 24px;
+}
+
+/* Chevron Arrows */
+.dv-nav-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8d8d8d;
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.dv-nav-arrow:hover {
+    background-color: #f3f4f6;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+/* Thumbnails Track */
+.dv-thumbnails-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+/* Card wrappers */
+.dv-thumb-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 199px;
+    text-align: center;
+}
+
+.dv-thumb-card-wrapper.active-wrapper {
+    width: 222px;
+}
+
+/* Individual Card (Figma: rounded 8px, shadow 25%) */
+.dv-thumb-card {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #e6e6fa;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.15);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.3s ease,
+                width 0.3s ease,
+                height 0.3s ease;
+    padding: 0;
+}
+
+/* Active vs Non-active size classes */
+#prev-thumb-wrapper .dv-thumb-card,
+#next-thumb-wrapper .dv-thumb-card {
+    width: 199px;
+    height: 154px;
+}
+
+#active-thumb-wrapper .dv-thumb-card {
+    width: 222px;
+    height: 172px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+}
+
+/* Thumbnail Images sizing */
+#prev-thumb-wrapper .dv-thumb-card-img,
+#next-thumb-wrapper .dv-thumb-card-img {
+    width: 90px;
+    height: 113px;
+    object-fit: cover;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.25);
+    border-radius: 2px;
+    transition: width 0.3s, height 0.3s;
+}
+
+#active-thumb-wrapper .dv-thumb-card-img {
+    width: 100px;
+    height: 125px;
+    object-fit: cover;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.25);
+    border-radius: 2px;
+    transition: width 0.3s, height 0.3s;
+}
+
+/* Progress / Timer Bar container */
+.dv-timer-bar-container {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 115px;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.dv-timer-bar-fill {
+    width: 0%;
+    height: 100%;
+    background: currentColor;
+    border-radius: 99px;
+}
+
+/* Titles under thumbnails */
+.dv-thumb-title {
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: normal;
+    color: var(--color-text-muted);
+    margin-top: 8px;
+    width: 199px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.dv-thumb-title.active-title {
+    font-size: 14px;
+    color: #000000;
+    width: 226px;
+}
+
+/* ── Caption below gallery ── */
+.dv-poster-caption-container {
+    max-width: 760px;
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+.dv-poster-caption {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-text-muted);
+    margin: 0;
+    line-height: 22px;
+}
+
+/* ── Reveal Animations ── */
+.reveal-item {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                filter 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, filter, transform;
+}
+
+.reveal-item.is-visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+/* ── Responsive Overrides ── */
+@media (max-width: 1024px) {
+    .back-btn {
+        left: 40px;
+        top: 40px;
+    }
+    
+    .case-study-content {
+        padding-top: 140px;
+    }
+
+    .dv-gallery-display {
+        width: 90vw;
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    .dv-display-inner {
+        width: 70%;
+        height: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .case-study-content {
+        padding: 120px 0 60px;
+        gap: 60px;
+    }
+
+    .cs-title {
+        font-size: 32px;
+    }
+
+    .cs-heading {
+        font-size: 24px;
+    }
+
+    .cs-subtitle {
+        font-size: 18px;
+    }
+
+    .back-btn span {
+        display: none;
+    }
+
+    .back-btn {
+        top: 24px;
+        left: 24px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .case-study-content {
+        padding-top: 100px;
+    }
+
+    /* Stack thumbs vertically or scroll horizontally */
+    .dv-carousel-controls {
+        gap: 16px;
+        overflow-x: auto;
+        padding-bottom: 16px;
+        justify-content: flex-start;
+    }
+
+    .dv-thumbnails-container {
+        gap: 16px;
+    }
+
+    .dv-nav-arrow {
+        display: none; /* Hide arrow navigation on mobile touch viewports */
+    }
+
+    .dv-thumb-card-wrapper, 
+    .dv-thumb-card-wrapper.active-wrapper {
+        width: 140px;
+    }
+
+    #prev-thumb-wrapper .dv-thumb-card,
+    #next-thumb-wrapper .dv-thumb-card,
+    #active-thumb-wrapper .dv-thumb-card {
+        width: 140px;
+        height: 108px;
+    }
+
+    #prev-thumb-wrapper .dv-thumb-card-img,
+    #next-thumb-wrapper .dv-thumb-card-img,
+    #active-thumb-wrapper .dv-thumb-card-img {
+        width: 60px;
+        height: 75px;
+    }
+
+    .dv-thumb-title, 
+    .dv-thumb-title.active-title {
+        width: 140px;
+        font-size: 11px;
+    }
+
+    .dv-timer-bar-container {
+        width: 70px;
+        left: 50%;
+    }
+}
